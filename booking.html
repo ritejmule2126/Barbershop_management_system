@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Barbershop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/img.jpg');
+            /* Set background image */
+            background-size: cover;
+            /* Cover the whole screen */
+            background-position: center;
+            /* Center the background image */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* White background with opacity for readability */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+            /* Ensures padding is included in width */
+        }
+
+        input[type="datetime-local"] {
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: pink;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: grey;
+        }
+
+        /* Ensure the input and button fields have a uniform look */
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #ff9900;
+            /* Highlight border on focus */
+        }
+
+        /* Optional styling for the additional notes (textarea) */
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Book Your Appointment</h2>
+        <form action="booking.php" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" maxlength="10" pattern="[0-9]{10}" required 
+       oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" 
+       placeholder="Enter 10-digit phone number">
+
+            <label for="service">Select Service</label>
+            <select id="service" name="service" required>
+            <option value="Haircut">Haircut</option>
+            <option value="Beard Grooming">Beard Grooming</option>
+            <option value="Hair Coloring">Hair Coloring</option>
+            <option value="Hot Towel Shave">Hot Towel Shave</option>
+            <option value="Scalp Treatment">Scalp Treatment</option>
+            <option value="Kids' Haircut">Kids' Haircut</option>
+            <option value="Special Event Grooming">Special Event Grooming</option>
+        </select>
+
+            <label for="barber">Select Barber</label>
+            <select id="barber" name="barber" required>
+            <option value="Barber 1">Barber 1</option>
+            <option value="Barber 2">Barber 2</option>
+            <option value="Barber 3">Barber 3</option>
+        </select>
+
+            <label for="date">Select Date and Time</label>
+            <input type="datetime-local" id="date" name="datetime" required>
+
+            <label for="payment_method">Select Payment method</label>
+            <select id="payment_method" name="payment_method" required>
+            <option value="pay_after_service">Pay after Service</option>
+            <option value="razorpay">Razorpay</option>
+        </select>
+
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes"></textarea>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
