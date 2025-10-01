@@ -8,13 +8,17 @@ A complete web-based application designed to streamline and digitalize the daily
 
 ## 📸 Demo Screenshots  
 
-| **Main Login Page** | **Customer Register** | **Customer Dashboard** |  
-|----------------------|-----------------------|-------------------------|  
-| ![Main Login](images/demo/Main_login_Page.png) | ![Register](images/demo/Customer_Register.png) | ![Customer Dashboard](images/demo/customer_dashboard.png) |  
+| **Main Login Page** | **Customer Register** |  
+|----------------------|-----------------------|  
+| ![Main Login](images/demo/Main_login_Page.png) | ![Register](images/demo/Customer_Register.png) |  
 
-| **Admin Login** | **Admin Dashboard** | **Manage Customers** |  
-|-----------------|----------------------|-----------------------|  
-| ![Admin Login](images/demo/Admin_login.png) | ![Admin Dashboard](images/demo/Admin_dashboard.png) | ![Manage Customers](images/demo/Manage_Customers.png) |  
+| **Customer Dashboard** | **Admin Login** |  
+|-------------------------|-----------------|  
+| ![Customer Dashboard](images/demo/customer_dashboard.png) | ![Admin Login](images/demo/Admin_login.png) |  
+
+| **Admin Dashboard** | **Manage Customers** |  
+|----------------------|-----------------------|  
+| ![Admin Dashboard](images/demo/Admin_dashboard.png) | ![Manage Customers](images/demo/Manage_Customers.png) |  
 
 | **Manage Services** | **Book Appointment** |  
 |---------------------|----------------------|  
