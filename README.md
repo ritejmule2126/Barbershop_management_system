@@ -6,6 +6,22 @@ A complete web-based application designed to streamline and digitalize the daily
 
 ---
 
+## 📸 Demo Screenshots  
+
+| **Main Login Page** | **Customer Register** | **Customer Dashboard** |  
+|----------------------|-----------------------|-------------------------|  
+| ![Main Login](images/demo/Main_login_Page.png) | ![Register](images/demo/Customer_Register.png) | ![Customer Dashboard](images/demo/customer_dashboard.png) |  
+
+| **Admin Login** | **Admin Dashboard** | **Manage Customers** |  
+|-----------------|----------------------|-----------------------|  
+| ![Admin Login](images/demo/Admin_login.png) | ![Admin Dashboard](images/demo/Admin_dashboard.png) | ![Manage Customers](images/demo/Manage_Customers.png) |  
+
+| **Manage Services** | **Book Appointment** |  
+|---------------------|----------------------|  
+| ![Manage Services](images/demo/Manage_services.png) | ![Book Appointment](images/demo/Book_appointment.png) |  
+
+---
+
 ## 📌 Features
 
 - ✅ Customer Registration & Login  
@@ -14,7 +30,7 @@ A complete web-based application designed to streamline and digitalize the daily
 - ✅ Service Management (Add/Edit/Delete)  
 - ✅ Billing System with invoice generation  
 - ✅ Responsive Design for mobile and desktop  
-- ✅ Clean and user-friendly UI
+- ✅ Clean and user-friendly UI  
 
 ---
 
@@ -34,28 +50,18 @@ A complete web-based application designed to streamline and digitalize the daily
 ```bash
 📦barbershop-management-system
  ┣ 📂images
- ┣ 📜add_customer.php
- ┣ 📜admin_dashboard.php
- ┣ 📜admin_login.html
- ┣ 📜admin_login.php
- ┣ 📜admin_logout.php
- ┣ 📜appointment_success.php
- ┣ 📜booking.html
- ┣ 📜booking.php
- ┣ 📜booking_history.php
- ┣ 📜dashboard.html
- ┣ 📜dashboard.php
- ┣ 📜db_connect.php
- ┣ 📜fetch_booking_history.html
- ┣ 📜fetch_booking_history.php
- ┣ 📜forgot_password.php
+ ┃ ┗ 📂demo
+ ┃    ┣ Main_login_Page.png
+ ┃    ┣ Customer_Register.png
+ ┃    ┣ customer_dashboard.png
+ ┃    ┣ Admin_login.png
+ ┃    ┣ Admin_dashboard.png
+ ┃    ┣ Manage_Customers.png
+ ┃    ┣ Manage_services.png
+ ┃    ┗ Book_appointment.png
  ┣ 📜index.html
- ┣ 📜index.php
- ┣ 📜manage_customers.php
- ┣ 📜manage_services.php
- ┣ 📜razorpay_payment.php
- ┣ 📜Register.html
- ┣ 📜Register.php
- ┣ 📜reset_password.php
- ┣ 📜view_bookings.php
- ┗ 📜README.md
+ ┣ 📜README.md
+ ┣ 📜admin_dashboard.php
+ ┣ 📜booking.php
+ ┣ 📜db_connect.php
+ ┗ ... other files
